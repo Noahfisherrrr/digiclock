@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(../font/digital-7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clock{
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(20, 20, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+    border-radius: 18px;
+}
+.time {
+    font-family: 'Digital', sans-serif;
+    font-size: 180px;
+    color: #1272a5;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin:auto;
+}
+.timeformat {
+    font-family: 'Digital', sans-serif;
+    font-size: 70px;
+    color: #1272a5;
+    background-color: rgb(20, 20, 24);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
