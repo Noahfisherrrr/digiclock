@@ -40,3 +40,9 @@
     cursor: pointer;
     
 }
+.clock h2 {
+    font-family: 'Digital', sans-serif;
+    font-size: 50px;
+    color: #1272a5;
+    margin: 20px 0;
+}

@@ -23,3 +23,26 @@ setInterval(digitalClock, 1000);
 digitalClock();
 
 document.getElementById('timeformat').addEventListener('change', digitalClock);
+
+function countDown() {
+    const targetDate = new Date('2025-07-04T20:00:00');
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+        document.getElementById('countdown').textContent = 'Countdown finished!';
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('countdown').textContent =
+        `${days}d ${hours}:${minutes}:${seconds}`;
+}
+
+countDown();
+setInterval(countDown, 1000);
+
